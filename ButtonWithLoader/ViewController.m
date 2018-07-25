@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "SHLoaderButton.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *btnoutlet;
+@property (weak, nonatomic) IBOutlet SHLoaderButton *btnActionLoader;
 
 @end
 
@@ -23,6 +26,17 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)btnAction:(id)sender {
+    
+    //[self.btnoutlet setSelected:YES];
+    self.btnoutlet.highlighted = YES;
+    self.btnoutlet.titleLabel.alpha = .5;
+    
+}
+- (IBAction)btnActionStopLoading:(id)sender {
+    //[self.btnActionLoader stopSHLoading];
+    
 }
 
 

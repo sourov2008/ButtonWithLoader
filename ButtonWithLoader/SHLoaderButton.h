@@ -10,4 +10,5 @@
 
 IB_DESIGNABLE @interface SHLoaderButton : UIButton
 
+ 
 @end
