@@ -10,12 +10,12 @@
 		AFA306C5210838D800E3569D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA306C4210838D800E3569D /* AppDelegate.m */; };
 		AFA306C8210838D800E3569D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA306C7210838D800E3569D /* ViewController.m */; };
 		AFA306CB210838D800E3569D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA306C9210838D800E3569D /* Main.storyboard */; };
-		AFA306CD210838D900E3569D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA306CC210838D900E3569D /* Assets.xcassets */; };
 		AFA306D0210838D900E3569D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA306CE210838D900E3569D /* LaunchScreen.storyboard */; };
 		AFA306D3210838D900E3569D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA306D2210838D900E3569D /* main.m */; };
 		AFA306DD210838D900E3569D /* ButtonWithLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA306DC210838D900E3569D /* ButtonWithLoaderTests.m */; };
 		AFA306E8210838D900E3569D /* ButtonWithLoaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA306E7210838D900E3569D /* ButtonWithLoaderUITests.m */; };
 		AFA306F72108398E00E3569D /* SHLoaderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA306F62108398E00E3569D /* SHLoaderButton.m */; };
+		BB05BADB2109C68700D76EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB05BADA2109C68700D76EA6 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 		AFA306C6210838D800E3569D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AFA306C7210838D800E3569D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AFA306CA210838D800E3569D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AFA306CC210838D900E3569D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA306CF210838D900E3569D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA306D1210838D900E3569D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFA306D2210838D900E3569D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		AFA306E9210838D900E3569D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFA306F52108398E00E3569D /* SHLoaderButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHLoaderButton.h; sourceTree = "<group>"; };
 		AFA306F62108398E00E3569D /* SHLoaderButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHLoaderButton.m; sourceTree = "<group>"; };
+		BB05BADA2109C68700D76EA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +110,8 @@
 				AFA306C7210838D800E3569D /* ViewController.m */,
 				AFA306F52108398E00E3569D /* SHLoaderButton.h */,
 				AFA306F62108398E00E3569D /* SHLoaderButton.m */,
+				BB05BADA2109C68700D76EA6 /* Assets.xcassets */,
 				AFA306C9210838D800E3569D /* Main.storyboard */,
-				AFA306CC210838D900E3569D /* Assets.xcassets */,
 				AFA306CE210838D900E3569D /* LaunchScreen.storyboard */,
 				AFA306D1210838D900E3569D /* Info.plist */,
 				AFA306D2210838D900E3569D /* main.m */,
@@ -241,7 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFA306D0210838D900E3569D /* LaunchScreen.storyboard in Resources */,
-				AFA306CD210838D900E3569D /* Assets.xcassets in Resources */,
+				BB05BADB2109C68700D76EA6 /* Assets.xcassets in Resources */,
 				AFA306CB210838D800E3569D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

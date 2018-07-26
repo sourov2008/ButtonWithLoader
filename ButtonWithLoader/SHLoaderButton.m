@@ -24,6 +24,27 @@
     return self;
 }
 
+
+-(void)setStopLoader :( BOOL) isStopped {
+ // Will stop loading if found yes
+    if (isStopped) {
+        NSArray *subviews = self.subviews.copy;
+        for (UIActivityIndicatorView *indicator in subviews) {
+            
+            if ([indicator isKindOfClass:[UIActivityIndicatorView class]]) {
+                [indicator stopAnimating];
+                
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
 - (void)commonInit
 {
 

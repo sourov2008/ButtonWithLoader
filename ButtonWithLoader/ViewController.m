@@ -35,7 +35,7 @@
     
 }
 - (IBAction)btnActionStopLoading:(id)sender {
-    //[self.btnActionLoader stopSHLoading];
+    self.btnActionLoader.stopLoader = YES;
     
 }
 

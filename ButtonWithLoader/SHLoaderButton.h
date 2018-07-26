@@ -10,5 +10,9 @@
 
 IB_DESIGNABLE @interface SHLoaderButton : UIButton
 
+@property( nonatomic ) BOOL stopLoader;
+
++(void)something;
+
  
 @end
