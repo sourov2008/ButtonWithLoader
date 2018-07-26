@@ -42,9 +42,6 @@
 }
 
 
-
-
-
 - (void)commonInit
 {
 
@@ -68,7 +65,7 @@
         
     }
     
- 
+   // Commmont Init
     UIActivityIndicatorView *indicator =[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     indicator.frame = CGRectZero;
     //indicator.backgroundColor = [UIColor redColor];
