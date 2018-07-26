@@ -48,6 +48,11 @@
     [self addTarget:self
                action:@selector(touchUpInside)
      forControlEvents:UIControlEventTouchUpInside];
+    
+    self.trailingMarginOfLoader = 8;
+    self.indicatorColor = [UIColor greenColor];
+
+    
 
 
 }
@@ -64,8 +69,7 @@
         }
         
     }
-    float trailingMarginOfloader = 8;
-    
+ 
    // Commmont Init
     UIActivityIndicatorView *indicator =[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     //indicator.frame = CGRectZero;
@@ -73,15 +77,22 @@
     indicator.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:indicator];
     
+    // Height
     [indicator addConstraint:[NSLayoutConstraint constraintWithItem:indicator attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:0 multiplier:1 constant:indicator.frame.size.height]];
     
+    //Width
     [indicator addConstraint:[NSLayoutConstraint constraintWithItem:indicator attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:0 multiplier:1 constant:indicator.frame.size.width]];
     
+    // leading
     [self addConstraint:[NSLayoutConstraint constraintWithItem:indicator attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
     
     //[self addConstraint:[NSLayoutConstraint constraintWithItem:redView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:150]];
     
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:indicator attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:self.frame.size.width - (indicator.frame.size.height + trailingMarginOfloader)]];
+    // trainling
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:indicator attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:self.frame.size.width - (indicator.frame.size.height + self.trailingMarginOfLoader)]];
+    
+    
+    indicator.color = self.indicatorColor;
     
     [indicator startAnimating];
     
