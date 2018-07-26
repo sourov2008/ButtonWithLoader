@@ -19,12 +19,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxL-CH-RMP" customClass="SHLoaderButton">
-                                <rect key="frame" x="16" y="318" width="190" height="48"/>
-                                <color key="backgroundColor" red="1" green="0.51356643440000005" blue="0.2312628031" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="16" y="318" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="aiI-oI-MgV"/>
+                                    <constraint firstAttribute="height" constant="40" id="aiI-oI-MgV"/>
                                 </constraints>
-                                <state key="normal" title="Hello"/>
+                                <state key="normal" title="Preapare for task initialization"/>
                                 <state key="highlighted">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -35,8 +35,8 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="trailingMarginOfLoader">
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -55,7 +55,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hxL-CH-RMP" secondAttribute="trailing" constant="169" id="Hq7-0D-MCC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hxL-CH-RMP" secondAttribute="trailing" constant="16" id="Hq7-0D-MCC"/>
                             <constraint firstItem="hxL-CH-RMP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="298" id="bDC-FE-Is6"/>
                             <constraint firstItem="hxL-CH-RMP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gjI-Iz-qGb"/>
                         </constraints>

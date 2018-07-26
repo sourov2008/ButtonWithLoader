@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.btnActionLoader.indicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
+    self.btnActionLoader.indicatorViewStyle = UIActivityIndicatorViewStyleGray;
 }
 
 
