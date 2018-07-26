@@ -52,34 +52,12 @@
                action:@selector(touchUpInside)
      forControlEvents:UIControlEventTouchUpInside];
 
-    
-    
-//    UIActivityIndicatorView *indicator =[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-//    indicator.frame = CGRectZero;
-//    //indicator.backgroundColor = [UIColor redColor];
-//    indicator.translatesAutoresizingMaskIntoConstraints = NO;
-//    [self addSubview:indicator];
-//
-//    [indicator addConstraint:[NSLayoutConstraint constraintWithItem:indicator attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:0 multiplier:1 constant:30]];
-//
-//    [indicator addConstraint:[NSLayoutConstraint constraintWithItem:indicator attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:0 multiplier:1 constant:30]];
-//
-//    [self addConstraint:[NSLayoutConstraint constraintWithItem:indicator attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
-//
-//    //[self addConstraint:[NSLayoutConstraint constraintWithItem:redView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:150]];
-//
-//    [self addConstraint:[NSLayoutConstraint constraintWithItem:indicator attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:343]];
-//
-//    [indicator startAnimating];
-//
-//    [self addSubview:indicator];
-
-    
 
 }
 
 -(void)touchUpInside{
     
+    // If previous Loader found then delete it . It cause happens when user multiple tap on button
     NSArray *subviews = self.subviews.copy;
     for (UIView *view in subviews) {
         
