@@ -94,6 +94,7 @@
     
     
     indicator.color = self.indicatorColor;
+    //    [self.btnActionLoader setTitleColor:[UIColor colorWithRed:205/255.f green:205/255.f blue:205/255.f alpha:1] forState:UIControlStateNormal];
 
 
     [indicator startAnimating];

@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxL-CH-RMP" customClass="SHLoaderButton">
-                                <rect key="frame" x="32" y="318" width="311" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxL-CH-RMP" customClass="SHLoaderButton">
+                                <rect key="frame" x="32" y="318" width="311" height="45"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="aiI-oI-MgV"/>
+                                    <constraint firstAttribute="height" constant="45" id="aiI-oI-MgV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Preapare for task initialization"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="  Preapare for task initialization"/>
                                 <state key="highlighted">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -40,15 +40,10 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQJ-kr-IIJ"/>
-                                    <action selector="btnActionTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="DKu-kL-RLS"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUh-B8-fAU">
-                                <rect key="frame" x="142" y="386" width="91" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Stop Loading"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUh-B8-fAU">
+                                <rect key="frame" x="134" y="391" width="108" height="30"/>
+                                <state key="normal" title="STOP LOADING"/>
                                 <connections>
                                     <action selector="btnActionStopLoading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nsn-Qb-kWv"/>
                                 </connections>
@@ -57,7 +52,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hxL-CH-RMP" secondAttribute="trailing" constant="32" id="Hq7-0D-MCC"/>
+                            <constraint firstItem="NUh-B8-fAU" firstAttribute="centerX" secondItem="hxL-CH-RMP" secondAttribute="centerX" id="Q7B-BN-ex4"/>
                             <constraint firstItem="hxL-CH-RMP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="298" id="bDC-FE-Is6"/>
+                            <constraint firstItem="NUh-B8-fAU" firstAttribute="top" secondItem="hxL-CH-RMP" secondAttribute="bottom" constant="28" id="fcW-aq-xP2"/>
                             <constraint firstItem="hxL-CH-RMP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="gjI-Iz-qGb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
