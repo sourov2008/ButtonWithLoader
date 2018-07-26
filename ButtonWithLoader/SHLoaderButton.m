@@ -50,7 +50,8 @@
      forControlEvents:UIControlEventTouchUpInside];
     
     self.trailingMarginOfLoader = 8;
-    self.indicatorColor = [UIColor greenColor];
+    self.indicatorColor = [UIColor grayColor];
+    self.indicatorViewStyle = UIActivityIndicatorViewStyleGray;
 
     
 
@@ -71,7 +72,7 @@
     }
  
    // Commmont Init
-    UIActivityIndicatorView *indicator =[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    UIActivityIndicatorView *indicator =[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:self.indicatorViewStyle];
     //indicator.frame = CGRectZero;
     //indicator.backgroundColor = [UIColor redColor];
     indicator.translatesAutoresizingMaskIntoConstraints = NO;
@@ -93,7 +94,8 @@
     
     
     indicator.color = self.indicatorColor;
-    
+
+
     [indicator startAnimating];
     
     [self addSubview:indicator];

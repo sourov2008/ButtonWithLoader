@@ -17,21 +17,19 @@ IB_DESIGNABLE @interface SHLoaderButton : UIButton
  */
 @property (nonatomic) IBInspectable CGFloat trailingMarginOfLoader;
 
-//typedef NS_ENUM(NSInteger, LabelStyle)
-//{
-//    LabelStyleContent = 0, //Default to content label
-//    LabelStyleHeader,
-//};
-//
-//
-//@property LabelStyle labelStyle;
-//@property (nonatomic, setter=setLabelAsInt:) IBInspectable NSInteger labelStyleLink;
 
 
 /*
- * set loader indicator
+ * set loader indicator color
  */
-@property (nonatomic) IBInspectable UIColor *indicatorColor;
+@property (nonatomic, strong) IBInspectable UIColor *indicatorColor;
+
+
+/*
+ * set loader indicator view style 
+ */
+@property (nonatomic)  UIActivityIndicatorViewStyle indicatorViewStyle;
+
 
 
 @end
