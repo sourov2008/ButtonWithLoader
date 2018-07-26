@@ -10,4 +10,26 @@
 
 IB_DESIGNABLE @interface SHLoaderButton : UIButton
 
+@property( nonatomic ) BOOL stopLoader;
+
+
+/** Trailing constant of loader indicator due to button . Default is 8.
+ */
+@property (nonatomic) IBInspectable CGFloat trailingMarginOfLoader;
+
+
+
+/*
+ * set loader indicator color
+ */
+@property (nonatomic, strong) IBInspectable UIColor *indicatorColor;
+
+
+/*
+ * set loader indicator view style 
+ */
+@property (nonatomic)  UIActivityIndicatorViewStyle indicatorViewStyle;
+
+
+
 @end
