@@ -28,15 +28,20 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)btnAction:(id)sender {
-    
-    //[self.btnoutlet setSelected:YES];
-    self.btnoutlet.highlighted = YES;
-    self.btnoutlet.titleLabel.alpha = .5;
+   // self.btnActionLoader.titleLabel.textColor = [UIColor grayColor];
+
     
 }
 - (IBAction)btnActionStopLoading:(id)sender {
     self.btnActionLoader.stopLoader = YES;
     
+}
+- (IBAction)btnActionTouchDown:(id)sender {
+    
+//    self.btnActionLoader.titleLabel.textColor = [UIColor grayColor];
+//    [self.btnActionLoader setTitleColor:[UIColor greenColor] forState:UIControlStateHighlighted];
+    
+    //[self.btnActionLoader title]
 }
 
 
