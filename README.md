@@ -1,7 +1,7 @@
 # ButtonWithLoader
 
 
-![Alt Loader](https://github.com/sourov2008/ButtonWithLoader/blob/develop/ButtonWithLoader/Loader.gif)
+![Alt Loader](https://github.com/sourov2008/ButtonWithLoader/blob/master/ButtonWithLoader/Demo.gif)
 
 
 Simply add UIActivityIndicator in your UIButton.
