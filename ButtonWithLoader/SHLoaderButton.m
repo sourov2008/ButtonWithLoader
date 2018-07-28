@@ -8,7 +8,10 @@
 
 #import "SHLoaderButton.h"
 
-@implementation SHLoaderButton
+@implementation SHLoaderButton{
+    
+    UIColor *buttonTextColor;
+}
 
 
 
@@ -37,6 +40,9 @@
             }
         }
     }
+    
+    [self setTitleColor:buttonTextColor forState:UIControlStateNormal];
+
 
 
 }
@@ -52,6 +58,43 @@
     self.trailingMarginOfLoader = 8;
     self.indicatorColor = [UIColor grayColor];
     self.indicatorViewStyle = UIActivityIndicatorViewStyleGray;
+    
+    buttonTextColor = self.titleLabel.textColor;
+    
+    
+//    float rightArrowHeight = 22;
+//    float rightArrowWidth = 22;
+//
+//
+//    // Commmont Init
+//    //UIImageView *rightArrow =[[UIImageView alloc]initWithFrame:CGRectZero];
+//    //rightArrow.image = [UIImage imageNamed:@"rightarrowhover"];
+//
+//    UILabel *rightArrow = [[UILabel alloc]initWithFrame:CGRectZero];
+//    rightArrow.backgroundColor = [UIColor greenColor];
+//
+//
+//    rightArrow.translatesAutoresizingMaskIntoConstraints = NO;
+//    [rightArrow setContentMode:UIViewContentModeScaleAspectFit];
+//    //[rightArrow sizeToFit];
+//
+//
+//
+//    // Height
+//    [rightArrow addConstraint:[NSLayoutConstraint constraintWithItem:rightArrow attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:0 multiplier:1 constant:rightArrowHeight]];
+//
+//    //Width
+//    [rightArrow addConstraint:[NSLayoutConstraint constraintWithItem:rightArrow attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:0 multiplier:1 constant:rightArrowWidth]];
+//
+//    // center
+//    [self addConstraint:[NSLayoutConstraint constraintWithItem:rightArrow attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:rightArrow attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
+//
+//    //[self addConstraint:[NSLayoutConstraint constraintWithItem:redView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:150]];
+//
+//   //  trainling
+//    [self addConstraint:[NSLayoutConstraint constraintWithItem:rightArrow attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:self.frame.size.width - (rightArrowWidth + self.trailingMarginOfLoader)]];
+//
+//    [self addSubview:rightArrow];
 
     
 
@@ -94,13 +137,22 @@
     
     
     indicator.color = self.indicatorColor;
-    //    [self.btnActionLoader setTitleColor:[UIColor colorWithRed:205/255.f green:205/255.f blue:205/255.f alpha:1] forState:UIControlStateNormal];
+    
+    if (self.buttonTextColorWhenIdicatorStartAnimating) {
+        
+        [self setTitleColor:self.buttonTextColorWhenIdicatorStartAnimating forState:UIControlStateNormal];
+
+        
+    }
+    //[self setTitleColor:[UIColor colorWithRed:205/255.f green:205/255.f blue:205/255.f alpha:1] forState:UIControlStateNormal];
 
 
     [indicator startAnimating];
     
     [self addSubview:indicator];
     
+    
+
 }
 
 

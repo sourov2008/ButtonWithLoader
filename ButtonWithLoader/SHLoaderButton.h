@@ -17,12 +17,17 @@ IB_DESIGNABLE @interface SHLoaderButton : UIButton
  */
 @property (nonatomic) IBInspectable CGFloat trailingMarginOfLoader;
 
-
-
 /*
  * set loader indicator color
  */
 @property (nonatomic, strong) IBInspectable UIColor *indicatorColor;
+
+
+/*
+ * set ButtonText Color after touch inside
+ */
+
+@property (nonatomic, strong) IBInspectable UIColor *buttonTextColorWhenIdicatorStartAnimating;
 
 
 /*
